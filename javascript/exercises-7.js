@@ -1,15 +1,25 @@
-TENTUKAN `luas Rectangle` sama dengan variabel 'Panjang' x variabel 'lebar'
-FOR setiap pertambahan 1 `index` dari 1 sampai dengan 100:
-    IF `index` adalah ganjil:
-        TAMBAHKAN `total` dengan `index`
-    ELSE IF `index` adalah genap:
-        KURANGI `total` dengan `index`
-    ENDIF
-ENDFOR
-TULISKAN "TOTAL: `total`"
 
+console.log ('TUGAS1');
 
-var length = parseInt(prompt("Enter length of Rectangle : "));
-	var width = parseInt(prompt("Enter width of Rectangle : "));
-var solving_area = (length * width);
-console.log('The Area of Rectangle is ' + solving_area);
+BACA dan SIMPAN 'angka pertama';
+BACA dan SIMPAN 'angka kedua';
+HITUNG 'angka pertama' dikalikan 'angka kedua';
+TULISKAN 'hasil perkalian sama dengan ' + HITUNG;
+
+console.log ('TUGAS2');
+TULISKAN 'Saya Belajar JavaScript';
+SIMPAN Belajar sama dengan 'Mampu';
+JIKA Belajar sama dengan 'Mampu' SELANJUTNYA
+      TULISKAN 'Pasti Bisa';
+JIKA LAINNYA Belajar tidak sama dengan 'Mampu' SELANJUTNYA
+      TULISKAN 'Tidak Bisa';
+SELESAI JIKA
+
+console.log ('TUGAS3');
+BACA dan SIMPAN 'masukan angka';
+SIMPAN 'jumlah' sama dengan 1;
+UNTUK 'jumlah' sama dengan 1 dan lebih kurang dari 'masukan angka' dan ULANGI dengan penambahan satu
+  JIKA 'jumlah' dibagi habis dengan 3 SELANJUTNYA
+  TULISKAN hasil 'jumlah';
+  JIKA SELESAI
+  TAMPILKAN 'Angka Terakhir sama dengan jumlah';
