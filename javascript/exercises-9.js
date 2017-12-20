@@ -1,18 +1,4 @@
-console.log('TUGAS1');
-
-SIMPAN 'nama';
-SIMPAN 'angka pembilang';
-SIMPAN 'angka penyebut'
-HITUNG 'hasil bagi'
-dari 'angka pembilang'
-dibagi 'angka penyebut'
-TULISKAN 'Halo '
-nama ', '
-angka pembilang ' dibagi'
-'angka penyebut'
-'adalah sama dengan'
-'hasil bagi';
-
+//TUGAS1
 
 var a, b, c, d;
 a = prompt('nama');
@@ -22,17 +8,7 @@ d = Number(b) / Number(c);
 console.log('Halo ' + a, 'hasil bagi = ' + d);
 
 
-console.log('TUGAS2');
-
-SIMPAN 'alas'
-dari segitiga
-SIMPAN 'tinggi'
-dari segitiga
-HITUNG 'luas segitiga'
-dari 'alas'
-dikali 'tinggi'
-dibagi 2
-TULISKAN "Luas Segitiga: 'luas segitiga'"
+//TUGAS2
 
 var a, b, c;
 a = prompt('alas');
@@ -41,7 +17,7 @@ c = (Number(a) * Number(b)) / 2;
 console.log('Luas Segitiga: ' + c);
 
 
-console.log('TUGAS3');
+//TUGAS3
 
 var tahun = 'tahun';
 if ('tahun' % 3 == 0) {
