@@ -8,7 +8,6 @@ for (var counter = 1; counter <101; counter++) {
     console.log(counter + ' GANJIL')
   }
 }
-
 console.log('//contoh-counter sekarang = 2')
 console.log('//contoh-output')
 console.log('GENAP')
