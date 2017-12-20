@@ -14,7 +14,9 @@ console.log('//contoh-output')
 console.log('GENAP')
 var counter = 2;
 for (var counter = 2; counter <101; counter ++) {
-  console.log(counter + ' GENAP')
+  if (counter % 2 === 0) {
+    console.log(counter + ' GENAP')
+  }
 }
 console.log('// dan seterusnya :)')
 
