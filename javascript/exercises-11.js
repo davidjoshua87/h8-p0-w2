@@ -1,17 +1,16 @@
 
-
 //proxytia next level game
 
 tahunlahir = prompt('Masukan Tahun Lahir');
 var nama = prompt('Masukan Nama');
-var peran = prompt('Masukan Peran');
+var peran = 'Petarung';
 var umur = 2017 - tahunlahir;
 var playerhealth = tahunlahir * (Math.random());
 var monsterhealth = tahunlahir * Math.random();
 var kodemonster = Math.floor(Math.pow(100, Math.random()));
 
-if(nama=== ""){
-  var peran = "kacung";
+if(nama === ''){
+  var peran = 'Kacung';
 }
 
 for(var looping=1; looping<=tahunlahir; looping++){

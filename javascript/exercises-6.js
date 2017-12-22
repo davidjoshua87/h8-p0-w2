@@ -1,79 +1,54 @@
-console.log('//contoh-ganjil genap')
-console.log('//contoh-counter sekarang = 1')
-console.log('//output')
-console.log('GANJIL')
+//Buatlah sebuah perulangan 1 - 100 dengan pertambahan counter sebanyak 1
+//Di dalam perulangan, periksa setiap angka counter:
+//Apabila angka counter adalah angka genap, tuliskan GENAP
+//Apabila angka counter adalah angka ganjil, tuliskan GANJIL
 var counter = 1;
 for (var counter = 1; counter <101; counter++) {
   if (counter % 2 === 1) {
     console.log(counter + ' GANJIL')
   }
-}
-
-console.log('//contoh-counter sekarang = 2')
-console.log('//contoh-output')
-console.log('GENAP')
-var counter = 2;
-for (var counter = 2; counter <101; counter ++) {
-  if (counter % 2 === 0) {
+  else
+  if (counter % 2 === 0){
     console.log(counter + ' GENAP')
   }
 }
-console.log('// dan seterusnya :)')
-
-console.log('//contoh-- untuk pertambahan counter 2')
-console.log('//output')
-console.log('')
+//Buatlah 3 perulangan baru dari 1 - 100, dengan pertambahan counter sebesar 2, 5, dan 9.
+//pertambahan counter sebesar 2
+//Apabila angka counter adalah kelipatan 3 dengan pertambahan 2, tuliskan 3 Kelipatan 3
 var counter = 1;
 for (var counter = 1; counter <101; counter += 2) {
-  console.log(counter + '')
+  if(counter % 3 === 0){
+  console.log(counter + '  3 Kelipatan 3')
+  }
+  else
+  if (counter % 3 === 1) {
+    console.log(counter + '')
+  }
 }
 
-console.log('//contoh-counter sekarang = 3')
-console.log('//contoh-output')
-console.log('3 Kelipatan 3')
-var counter = 3;
-for (var counter = 3; counter <101; counter += 3) {
-  console.log(counter + ' 3 Kelipatan 3')
-}
-console.log('//contoh- dan seterusnya :)')
-
-console.log('//contoh-- untuk pertambahan counter 5')
-console.log('//output')
-console.log('')
+//pertambahan counter sebesar 5
+//Apabila angka counter adalah kelipatan 6 dengan pertambahan 5, tuliskan 6 Kelipatan 6
 var counter = 1;
 for (var counter = 1; counter <101; counter += 5) {
-  console.log(counter + '')
+  if(counter % 6 === 0){
+  console.log(counter + '  6 Kelipatan 6')
+  }
+  else
+  if (counter % 6 === 1) {
+    console.log(counter + '')
+  }
 }
 
-console.log('//contoh-counter sekarang = 6')
-console.log('//contoh-output')
-console.log('6 Kelipatan 6')
-var counter = 6;
-for (var counter = 6; counter <101; counter += 6) {
-  console.log(counter + ' 6 Kelipatan 6')
-}
-console.log('//contoh- dan seterusnya :)')
+//pertambahan counter sebesar 9
+//Apabila angka counter adalah kelipatan 10 dengan pertambahan 9, tuliskan 10 Kelipatan 10
 
-console.log('//contoh-- untuk pertambahan counter 9')
-console.log('//output')
-console.log('')
 var counter = 1;
 for (var counter = 1; counter <101; counter += 9) {
-  console.log(counter + '')
-}
-console.log('//contoh-counter sekarang = 6')
-console.log('//contoh-output')
-console.log('6 Kelipatan 6')
-var counter = 6;
-for (var counter = 6; counter <101; counter += 6) {
-  console.log(counter + ' 6 Kelipatan 6')
-}
-console.log('//contoh- dan seterusnya :)')
-
-console.log('//contoh-- untuk pertambahan counter 10')
-console.log('//output')
-console.log('')
-var counter = 1;
-for (var counter = 1; counter <101; counter += 10) {
-  console.log(counter + '')
+  if(counter % 10 === 0){
+  console.log(counter + '  10 Kelipatan 10')
+  }
+  else
+  if (counter % 10 === 1) {
+    console.log(counter + '')
+  }
 }

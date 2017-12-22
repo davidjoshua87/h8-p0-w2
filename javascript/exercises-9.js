@@ -19,19 +19,18 @@ console.log('Luas Segitiga: ' + c);
 
 //TUGAS3
 
-tahun = prompt ('tahun');
-if (tahun % 4 == 0) {
-  if (tahun % 100 == 1) {
-    console.log('tahun adalah tahun kabisat');
-  }
-    else
-      if (tahun % 400 == 0) {
-        console.log('tahun adalah tahun kabisat');
-      }
-      else {
-        console.log('tahun adalah bukan tahun kabisat');
+var tahun = prompt ('masukan tahun')
+if (tahun % 4 === 0) {
+        if (tahun % 100 === 1) {
+            console.log('tahun adalah tahun kabisat');
+        }
+        else if (tahun % 400 === 0) {
+            console.log('tahun adalah tahun kabisat');
+        }
+        else {
+          console.log('tahun adalah bukan tahun kabisat');
+        }
       }
   else {
-    console.log('tahun adalah bukan tahun kabisat');
-  }
-}
+          console.log('tahun adalah bukan tahun kabisat');
+    }
