@@ -3,9 +3,9 @@
 //"!dlrow olleh"
 
 function balikString(str){
-  var penampung = '';
+  var hasil = '';
     for(var hello = str.length-1; hello >= 0; hello--){
-      penampung += str[hello];
-  }return penampung;
+      hasil += str[hello];
+  }return hasil;
 }
 console.log(balikString('hello world!'));
