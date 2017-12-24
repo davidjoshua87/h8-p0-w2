@@ -8,12 +8,12 @@
  * Roman Alamsyah
  */
 
-var input = ['0001','Roman Alamsyah','Bandar Lampung','21/05/1989','Membaca'];
+var input = ['0001', 'Roman Alamsyah', 'Bandar Lampung', '21/05/1989', 'Membaca'];
 
-function dataHandling2(input){
-  input.splice(1, 1,'Roman Alamsyah Elsharawy');
-  input.splice(2, 1,'Provinsi Bandar Lampung');
-  input.splice(4,1,'Pria','SMA International Metro');
+function dataHandling2(input) {
+  input.splice(1, 1, 'Roman Alamsyah Elsharawy');
+  input.splice(2, 1, 'Provinsi Bandar Lampung');
+  input.splice(4, 1, 'Pria', 'SMA International Metro');
   console.log(input);
 
 
@@ -21,38 +21,50 @@ function dataHandling2(input){
   var pemisah = month.split('/');
   var bulan = parseInt(pemisah[1]);
 
-  switch(bulan){
-    case 1: bulan = 'Januari';
-    break;
-    case 2: bulan = 'Februari';
-    break;
-    case 3: bulan = 'Maret';
-    break;
-    case 4: bulan = 'April';
-    break;
-    case 5: bulan = 'Mei';
-    break;
-    case 6: bulan = 'Juni';
-    break;
-    case 7: bulan = 'Juli';
-    break;
-    case 8: bulan = 'Agustus';
-    break;
-    case 9: bulan = 'September';
-    break;
-    case 10: bulan = 'October';
-    break;
-    case 11: bulan = 'November';
-    break;
-    case 12: bulan = 'Desember';
-    break;
+  switch (bulan) {
+    case 1:
+      bulan = 'Januari';
+      break;
+    case 2:
+      bulan = 'Februari';
+      break;
+    case 3:
+      bulan = 'Maret';
+      break;
+    case 4:
+      bulan = 'April';
+      break;
+    case 5:
+      bulan = 'Mei';
+      break;
+    case 6:
+      bulan = 'Juni';
+      break;
+    case 7:
+      bulan = 'Juli';
+      break;
+    case 8:
+      bulan = 'Agustus';
+      break;
+    case 9:
+      bulan = 'September';
+      break;
+    case 10:
+      bulan = 'October';
+      break;
+    case 11:
+      bulan = 'November';
+      break;
+    case 12:
+      bulan = 'Desember';
+      break;
   }
   console.log(bulan);
 
 
   var sorting = month.split('/');
-  sorting.sort(function(value1,value2) {
-    return value2-value1;
+  sorting.sort(function(value1, value2) {
+    return value2 - value1;
   });
   console.log(sorting);
 
@@ -61,7 +73,7 @@ function dataHandling2(input){
 
 
   var middlename = input[1];
-  var middlename1 = middlename.slice(0,15);
+  var middlename1 = middlename.slice(0, 15);
   console.log(middlename1);
 
 }
