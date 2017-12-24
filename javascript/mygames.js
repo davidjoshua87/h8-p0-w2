@@ -176,7 +176,6 @@ function tampilkan() {
   console.log('');
 
   //Penyerangan.....
-
   var darahPrajurit = tahunLahir * (Math.random());
   var darahMusuh = tahunLahir * (Math.random());
   var prajuritMusuh = Math.floor(Math.pow(100, Math.random()));
