@@ -23,6 +23,7 @@
 #### 			TAMPILKN(Tidak Niat MAin);
 #### 		ENDIF
 #### 	ENDIF
+####  BREAK;
 #### ENDWHILE
 #### TAMPILKAN(Di GAMES Nama Kamu adalah,  + 'nama' + tanda seru);
 
@@ -126,8 +127,9 @@
 #### VARIABLE 'pertarungn' sama dengan 'year' dikurang 'tahuLAhir' dibagi 4;
 #### VARIABLE 'pertarungan' sama dengan sama dengan diubah menjadi bilangan bulat number;
 #### VARIABLE 'tahunPertarungan' sama dengan 'year' ditambah 'pertarungan';
-#### VARIABLE 'tahunSelesai' sama dengan 'tahunPertarungan'- 'tahunDImulai';
-#### 			TAMPILKAN (Pertarungan Akan Selesai Selama  + 'tahunSelesai' +  Tahun);
+#### VARIABLE 'tahun' sama dengan 'tahunPertarungan'- 'tahunDImulai';
+#### VARIABLE 'tahunSelesai' sama dengan Math.abs'tahun';
+#### TAMPILKAN (Pertarungan Akan Selesai Selama  + 'tahunSelesai' +  Tahun);
 
 #### //Penyerangan.....
 #### VARIABLE 'darahPrajurit' sama dengan 'tahunLahir' dikalikn dengan Math.random;

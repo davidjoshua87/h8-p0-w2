@@ -1,6 +1,48 @@
+/*
+Create Your Own JavaScript App
+Objectives
+▢ Melatih kreatifitas dalam pembuatan program.
+Directions
+Buatlah sebuah program yang memiliki salah satu dari berbagai tujuan berikut:
+
+Cerita petualangan interaktif
+To-do list
+Quiz atau trivia game
+Voting dan polling
+Permainan bebas buatanmu
+Catatan: Ingat untuk memberi dokumentasi judul di baris awal agar jelas tujuan utama program kamu buat apa.
+
+Scoring
+Karena tugas kali ini merupakan hasil dari kreatifitas kamu dalam membuat program, kami tidak membatasi sejauh mana kamu dalam membuat program ini. Pada tugas kali ini kami akan memberikan nilai berdasarkan tingkat sejauh mana kamu memanfaatkan logika dan syntax JavaScript yang telah kamu pelajari selama ini, dan kreatifitas dalam membuat program yang menarik dan memiliki kompleksitas yang cukup menantang. Berikut ini cara kami melakukan scoring:
+
+Untuk program yang tidak error, minimal akan mendapatkan nilai 30.
+
+Untuk program yang melibatkan penggunaan:
+
+Kondisional (if-else): mendapatkan nilai tambahan 10.
+Looping (for/while): mendapatkan nilai tambahan 10.
+Tipe data Array: mendapatkan nilai tambahan 10.
+Function: mendapatkan nilai tambahan 15.
+Kamu juga diminta untuk membuat pseudocode dari program yang kamu buat. Apabila program yang kamu buat sesuai dengan pseudocode yang diminta, kamu akan mendapat nilai tambahan 25.
+
+Note: Disarankan membuat pseudocode sebelum membuat program nya.
+
+Submissions
+▢ Buatlah program tersebut dalam suatu file misalnya myapp.js atau mygame.js pada repo kamu, dan pseudocode.md untuk pseudocode-nya. Cukup dengan CLI/terminal/Repl/JSBin saja, tidak perlu HTML dan CSS..
+▢ Commit dan push file tersebut ke GitHub.
+▢ Kirimkan link ke form pengumpulan tugas.
+*/
+
+//code disini
 
 //PSEUDOCODE...
-/*BUAT FUNCTION tampilkan()
+/*
+Adalah games simple javascript yang berceritakan tentang satu hari dimana seorang sebagai prajurit dan memiliki senjata untuk menghancurkan senuah kota musuh.
+Tanggal dan Hari kelahiran seorang sebagai prajurit dengan peran akan menjadi sebuah acuan dimana akan menentukan hari penyerangan.
+Bulan kelahiran dapat menjadi acuan untuk menentukan kota mana dahulu yang harus dihancurkan. Dan angka tahun menentukan kapan seorang prajurit dapat memulai penyerangan.
+Jadi penting mengetahui Tanggal dan Hari Kelahiran.
+
+BUAT FUNCTION tampilkan()
 TAMPILKAN (SELAMAT DATANG DI GAMES "YOUR DAY IS YOUR VICTORY");
 SIMPAN DAN MASUKAN 'nama';
 VARIABLE 'namaTerisi' = true;
@@ -15,6 +57,7 @@ TAMPILKAN(Masukan Nama Anda!);
   TAMPILKN(Tidak Niat MAin);
   ENDIF
 ENDIF
+BREAK
 ENDWHILE
 TAMPILKAN(Di GAMES Nama Kamu adalah,  + 'nama' + tanda seru);
 
@@ -118,7 +161,8 @@ VARIABLE year sama dengan yy kurang dari 1000, yy + 1900 :yy;
 VARIABLE 'pertarungn' sama dengan 'year' dikurang 'tahuLAhir' dibagi 4;
 VARIABLE 'pertarungan' sama dengan sama dengan diubah menjadi bilangan bulat number;
 VARIABLE 'tahunPertarungan' sama dengan 'year' ditambah 'pertarungan';
-VARIABLE 'tahunSelesai' sama dengan 'tahunPertarungan'- 'tahunDImulai';
+VARIABLE 'tahun' sama dengan 'tahunPertarungan'- 'tahunDImulai';
+VARIABLE 'tahunSelesai' sama dengan Math.abs'tahun';
 TAMPILKAN (Pertarungan Akan Selesai Selama  + 'tahunSelesai' +  Tahun);
 
 //Penyerangan.....
@@ -151,7 +195,9 @@ ENDIF
 ENDFUNCTION
 JALANKAN FUNCTION tampilkan();
 */
-//........
+
+
+//code disini
 //Mengisi Nama dan Peran Anda...
 function tampilkan() {
   alert('SELAMAT DATANG DI GAMES "YOUR DAY IS YOUR VICTORY"');
@@ -176,11 +222,10 @@ function tampilkan() {
     }
     break;
   }
-
   alert('Di GAMES Nama Kamu adalah, ' + nama + '!');
 
+  //pilihan peran
   pilihanPeran = prompt('Pilih peran anda: [0 = Penembak, 1 = Pengintai, 2 = Pengebom]', 'Masukan Peran');
-
   while (peranTerisi) {
     if (pilihanPeran === '') {
       alert('Pilih peran anda!');
@@ -208,7 +253,7 @@ function tampilkan() {
   ambilSenjata(pilihanPeran);
 
   //Tentukan Hari Kamu Sekarang!!!
-  var yourDay = prompt('Masukan Tanggal Lahir Anda\n Month-Date-Year\nContoh: 3-21-2000', 'Masukan Date'); //prompt
+  var yourDay = prompt('Masukan Tanggal Lahir Anda\nMonth-Date-Year\nContoh: 3-21-2000', 'Masukan Date'); //prompt
   function findDay() {
     var ar = new Array(6);
     ar[0] = 'Minggu';
@@ -218,7 +263,6 @@ function tampilkan() {
     ar[4] = 'Kamis';
     ar[5] = 'Jumat';
     ar[6] = 'Sabtu';
-    //...........
     if (yourDay == '' || yourDay == 'Masukan Tanggal Lahir') {
       console.log('Harus Anda Isi');
       console.log('Kembali Ke Awal dan Isi');
@@ -336,7 +380,6 @@ function tampilkan() {
   var senjataMusuh = ["Senapan", "Panah"];
 
   for (var i = 0; i <= tahunDimulai; i++) {
-
     if (i % tahunSelesai === 0) {
       console.log(nama + ' ' + 'Menyerang Kota ' + namaMarkas + ' dengan Senjatanya');
       darahMusuh = darahMusuh - tahunSelesai;
