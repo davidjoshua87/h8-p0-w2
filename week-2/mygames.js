@@ -37,6 +37,7 @@ Submissions
 
 //PSEUDOCODE...
 /*
+GAMES: YOUR DAY IS YOUR VICTORY
 Adalah games simple javascript yang berceritakan tentang satu hari dimana seorang sebagai prajurit dan memiliki senjata untuk menghancurkan senuah kota musuh.
 Tanggal dan Hari kelahiran seorang sebagai prajurit dengan peran akan menjadi sebuah acuan dimana akan menentukan hari penyerangan.
 Bulan kelahiran dapat menjadi acuan untuk menentukan kota mana dahulu yang harus dihancurkan. Dan angka tahun menentukan kapan seorang prajurit dapat memulai penyerangan.
